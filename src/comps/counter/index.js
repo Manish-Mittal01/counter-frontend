@@ -4,7 +4,6 @@ import axios from '../../axios/axios';
 function Counter() {
     const [counter, setCounter] = useState();
     const [err, setErr] = useState();
-    const [inputValue, setInputValue] = useState()
 
     useEffect(() => {
         axios.get("getCounter")
