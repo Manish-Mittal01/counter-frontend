@@ -28,6 +28,9 @@ function Counter() {
             })
     }
 
+    const resetCounter = () => {
+        setCounter(0)
+    }
 
 
     return (
@@ -39,6 +42,7 @@ function Counter() {
                         <h1>{counter}</h1>
                         <button style={{ marginInline: 10 }} onClick={() => updateCounterValue("increasecounter")} >Increase</button>
                         <button onClick={() => updateCounterValue("decreasecounter")} >Decrease</button>
+                        <button onClick={() => resetCounter()} >Reset</button>
                     </div>
             }
         </>
